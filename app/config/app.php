@@ -39,13 +39,20 @@ return array(
 	|
 	*/
 
-	'locales' => array('en'),
-
 	'locale' => 'en',
 
-	'fallback_locale' => 'en',
+	/*
+	|--------------------------------------------------------------------------
+	| Application Fallback Locale
+	|--------------------------------------------------------------------------
+	|
+	| The fallback locale determines the locale to use when the current one
+	| is not available. You may change the value to correspond to any of
+	| the language folders that are provided through your application.
+	|
+	*/
 
-	'locale_path' => __DIR__.'/../lang',
+	'fallback_locale' => 'en',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -62,24 +69,6 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Class Aliases
-	|--------------------------------------------------------------------------
-	|
-	| This array of class aliases will be registered when this application
-	| is started. However, feel free to register as many as you wish as
-	| the aliases are "lazy" loaded so they don't hinder performance.
-	|
-	*/
-
-	'aliases' => array(
-
-		'Controller' => 'Illuminate\Routing\Controllers\Controller',
-		'Eloquent'   => 'Illuminate\Database\Eloquent\Model',
-
-	),
-
-	/*
-	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
 	|--------------------------------------------------------------------------
 	|
@@ -91,29 +80,73 @@ return array(
 
 	'providers' => array(
 
-		'Illuminate\Foundation\Providers\AliasServiceProvider',
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
-		'Illuminate\Foundation\Providers\AuthServiceProvider',
-		'Illuminate\Foundation\Providers\CacheServiceProvider',
+		'Illuminate\Auth\AuthServiceProvider',
+		'Illuminate\Cache\CacheServiceProvider',
 		'Illuminate\Foundation\Providers\ComposerServiceProvider',
-		'Illuminate\Foundation\Providers\ControllerServiceProvider',
-		'Illuminate\Foundation\Providers\CookieServiceProvider',
-		'Illuminate\Foundation\Providers\DatabaseServiceProvider',
-		'Illuminate\Foundation\Providers\EncrypterServiceProvider',
-		'Illuminate\Foundation\Providers\EventsServiceProvider',
-		'Illuminate\Foundation\Providers\FilesystemServiceProvider',
-		'Illuminate\Foundation\Providers\HashServiceProvider',
-		'Illuminate\Foundation\Providers\LogServiceProvider',
-		'Illuminate\Foundation\Providers\MailServiceProvider',
-		'Illuminate\Foundation\Providers\MigrationServiceProvider',
-		'Illuminate\Foundation\Providers\PaginationServiceProvider',
+		'Illuminate\Routing\ControllerServiceProvider',
+		'Illuminate\CookieServiceProvider',
+		'Illuminate\Database\DatabaseServiceProvider',
+		'Illuminate\EncryptionServiceProvider',
+		'Illuminate\FilesystemServiceProvider',
+		'Illuminate\Hashing\HashServiceProvider',
+		'Illuminate\Log\LogServiceProvider',
+		'Illuminate\Mail\MailServiceProvider',
+		'Illuminate\Database\MigrationServiceProvider',
+		'Illuminate\Pagination\PaginationServiceProvider',
 		'Illuminate\Foundation\Providers\PublisherServiceProvider',
-		'Illuminate\Foundation\Providers\RedisServiceProvider',
-		'Illuminate\Foundation\Providers\SeedServiceProvider',
-		'Illuminate\Foundation\Providers\SessionServiceProvider',
-		'Illuminate\Foundation\Providers\TranslationServiceProvider',
-		'Illuminate\Foundation\Providers\ValidatorServiceProvider',
-		'Illuminate\Foundation\Providers\ViewServiceProvider',
+		'Illuminate\Redis\RedisServiceProvider',
+		'Illuminate\Database\SeedServiceProvider',
+		'Illuminate\Foundation\Providers\ServerServiceProvider',
+		'Illuminate\Session\SessionServiceProvider',
+		'Illuminate\Foundation\Providers\TinkerServiceProvider',
+		'Illuminate\Translation\TranslationServiceProvider',
+		'Illuminate\Validation\ValidationServiceProvider',
+		'Illuminate\View\ViewServiceProvider',
+
+	),
+
+	/*
+	|--------------------------------------------------------------------------
+	| Class Aliases
+	|--------------------------------------------------------------------------
+	|
+	| This array of class aliases will be registered when this application
+	| is started. However, feel free to register as many as you wish as
+	| the aliases are "lazy" loaded so they don't hinder performance.
+	|
+	*/
+
+	'aliases' => array(
+
+		'App'        => 'Illuminate\Support\Facades\App',
+		'Artisan'    => 'Illuminate\Support\Facades\Artisan',
+		'Auth'       => 'Illuminate\Support\Facades\Auth',
+		'Cache'      => 'Illuminate\Support\Facades\Cache',
+		'Config'     => 'Illuminate\Support\Facades\Config',
+		'Controller' => 'Illuminate\Routing\Controllers\Controller',
+		'Cookie'     => 'Illuminate\Support\Facades\Cookie',
+		'Crypt'      => 'Illuminate\Support\Facades\Crypt',
+		'DB'         => 'Illuminate\Support\Facades\DB',
+		'Eloquent'   => 'Illuminate\Database\Eloquent\Model',
+		'Event'      => 'Illuminate\Support\Facades\Event',
+		'File'       => 'Illuminate\Support\Facades\File',
+		'Hash'       => 'Illuminate\Support\Facades\Hash',
+		'Input'      => 'Illuminate\Support\Facades\Input',
+		'Lang'       => 'Illuminate\Support\Facades\Lang',
+		'Log'        => 'Illuminate\Support\Facades\Log',
+		'Mail'       => 'Illuminate\Support\Facades\Mail',
+		'Paginator'  => 'Illuminate\Support\Facades\Paginator',
+		'Redirect'   => 'Illuminate\Support\Facades\Redirect',
+		'Redis'      => 'Illuminate\Support\Facades\Redis',
+		'Request'    => 'Illuminate\Support\Facades\Request',
+		'Response'   => 'Illuminate\Support\Facades\Response',
+		'Route'      => 'Illuminate\Support\Facades\Route',
+		'Schema'     => 'Illuminate\Support\Facades\Schema',
+		'Session'    => 'Illuminate\Support\Facades\Session',
+		'URL'        => 'Illuminate\Support\Facades\URL',
+		'Validator'  => 'Illuminate\Support\Facades\Validator',
+		'View'       => 'Illuminate\Support\Facades\View',
 
 	),
 

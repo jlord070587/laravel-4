@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'Illuminate\\BindingResolutionException' => $baseDir . '/vendor/illuminate/container/src/Illuminate/Container.php',
     'Illuminate\\Config\\FileLoader' => $baseDir . '/vendor/illuminate/config/src/Illuminate/Config/FileLoader.php',
