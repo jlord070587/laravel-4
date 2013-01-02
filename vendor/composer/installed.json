@@ -1,811 +1,5 @@
 [
     {
-        "name": "symfony/http-foundation",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
-        "target-dir": "Symfony/Component/HttpFoundation",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/HttpFoundation",
-            "reference": "v2.1.1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/symfony/HttpFoundation/zipball/v2.1.1",
-            "reference": "v2.1.1",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "time": "2012-09-04 05:24:42",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\HttpFoundation": "",
-                "SessionHandlerInterface": "Symfony/Component/HttpFoundation/Resources/stubs"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony HttpFoundation Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "illuminate/hashing",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/hashing",
-            "reference": "5a695c5ade90dd13b052cc6aad3099f1056054be"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/hashing/archive/5a695c5ade90dd13b052cc6aad3099f1056054be.zip",
-            "reference": "5a695c5ade90dd13b052cc6aad3099f1056054be",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2012-08-09 18:14:41",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A password hashing library.",
-        "keywords": [
-            "password",
-            "hashing",
-            "bcrypt"
-        ]
-    },
-    {
-        "name": "illuminate/encryption",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/encryption",
-            "reference": "v1.0.1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/encryption/zipball/v1.0.1",
-            "reference": "v1.0.1",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2012-10-17 11:10:37",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/Illuminate/Encrypter.php"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A simple wrapper around the mcrypt library."
-    },
-    {
-        "name": "illuminate/support",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/support",
-            "reference": "483a72fa7f4191ca8b0e742dd688e67d55133f28"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/support/archive/483a72fa7f4191ca8b0e742dd688e67d55133f28.zip",
-            "reference": "483a72fa7f4191ca8b0e742dd688e67d55133f28",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2012-11-05 03:52:08",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Support": "src/"
-            },
-            "files": [
-                "src/helpers.php"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "Various utilities and support functions."
-    },
-    {
-        "name": "illuminate/cookie",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/cookie",
-            "reference": "64008aaa809fd263845823b245572649f40bee81"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/cookie/archive/64008aaa809fd263845823b245572649f40bee81.zip",
-            "reference": "64008aaa809fd263845823b245572649f40bee81",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/support": ">=1.0.0",
-            "symfony/http-foundation": "2.1.0",
-            "illuminate/encryption": ">=1.0.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-10-13 10:19:36",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A cookie creation utility."
-    },
-    {
-        "name": "illuminate/container",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/container",
-            "reference": "fe8b4407d1b3070552adb1a09c671abb0bb8397e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/container/zipball/fe8b4407d1b3070552adb1a09c671abb0bb8397e",
-            "reference": "fe8b4407d1b3070552adb1a09c671abb0bb8397e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2012-10-25 08:46:27",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A powerful IoC container for PHP."
-    },
-    {
-        "name": "illuminate/events",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/events",
-            "reference": "5af42f2d9c6d240ac6ec0ddad58cf33c27d98422"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/events/zipball/5af42f2d9c6d240ac6ec0ddad58cf33c27d98422",
-            "reference": "5af42f2d9c6d240ac6ec0ddad58cf33c27d98422",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/container": ">=1.0.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-11-02 17:02:45",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Events": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A simple, powerful events system."
-    },
-    {
-        "name": "illuminate/database",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/database",
-            "reference": "1863dd9ac432e2ce66821739401ef0bb037a788e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/database/archive/1863dd9ac432e2ce66821739401ef0bb037a788e.zip",
-            "reference": "1863dd9ac432e2ce66821739401ef0bb037a788e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/support": ">=1.0.0",
-            "illuminate/events": ">=1.0.0"
-        },
-        "require-dev": {
-            "illuminate/pagination": ">=1.0.0",
-            "illuminate/console": ">=1.0.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "mockery/mockery": "0.7.2",
-            "illuminate/support": ">=1.0.0"
-        },
-        "suggest": {
-            "illuminate/events": "Allows for catching of database query events."
-        },
-        "time": "2012-10-28 12:41:53",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Database": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "An elegant database abstraction library.",
-        "keywords": [
-            "laravel"
-        ]
-    },
-    {
-        "name": "illuminate/filesystem",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/filesystem",
-            "reference": "ce54be10b9b191ef996d34465e31c5d26f4c922f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/filesystem/zipball/ce54be10b9b191ef996d34465e31c5d26f4c922f",
-            "reference": "ce54be10b9b191ef996d34465e31c5d26f4c922f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2012-11-01 21:57:57",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/Illuminate/Filesystem.php"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A filesystem abstraction library."
-    },
-    {
-        "name": "illuminate/redis",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/redis",
-            "reference": "v1.0.0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/redis/archive/v1.0.0.zip",
-            "reference": "v1.0.0",
-            "shasum": ""
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-09-18 20:49:47",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Redis": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "keywords": [
-            "laravel"
-        ]
-    },
-    {
-        "name": "illuminate/cache",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/cache",
-            "reference": "908013a6a960ba29cb0441422c7e8764320657e3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/cache/zipball/908013a6a960ba29cb0441422c7e8764320657e3",
-            "reference": "908013a6a960ba29cb0441422c7e8764320657e3",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "illuminate/support": ">=1.0.0",
-            "illuminate/redis": ">=1.0.0",
-            "illuminate/database": ">=1.0.0",
-            "illuminate/encryption": ">=1.0.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-10-18 16:11:21",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Cache": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A beautiful caching library."
-    },
-    {
-        "name": "illuminate/session",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/session",
-            "reference": "b93fe7442a412989f579a6808ea5fe3a9c03e81b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/session/zipball/b93fe7442a412989f579a6808ea5fe3a9c03e81b",
-            "reference": "b93fe7442a412989f579a6808ea5fe3a9c03e81b",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "symfony/http-foundation": ">=2.0.0",
-            "illuminate/cache": ">=1.0.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "illuminate/encryption": ">=1.0.0",
-            "illuminate/cookie": ">=1.0.0",
-            "illuminate/database": ">=1.0.0"
-        },
-        "require-dev": {
-            "mockery/mockery": ">=0.7.2"
-        },
-        "time": "2012-10-18 16:55:25",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Session": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A tidy, simple session library."
-    },
-    {
-        "name": "illuminate/auth",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/auth",
-            "reference": "bbfea8ff6625c1e710be32b361c7e44fe3483934"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/auth/zipball/bbfea8ff6625c1e710be32b361c7e44fe3483934",
-            "reference": "bbfea8ff6625c1e710be32b361c7e44fe3483934",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/session": ">=1.0.0",
-            "illuminate/cookie": ">=1.0.0",
-            "illuminate/encryption": ">=1.0.0",
-            "illuminate/hashing": ">=1.0.0",
-            "symfony/http-foundation": "2.1.*"
-        },
-        "require-dev": {
-            "mockery/mockery": ">=0.7.2",
-            "illuminate/database": ">=1.0.0"
-        },
-        "time": "2012-10-23 08:15:14",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Auth": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A flexible, driver based authentication library."
-    },
-    {
-        "name": "illuminate/config",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/config",
-            "reference": "97ce741ae14704c07b7002656847d0482adee0e7"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/config/archive/97ce741ae14704c07b7002656847d0482adee0e7.zip",
-            "reference": "97ce741ae14704c07b7002656847d0482adee0e7",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "illuminate/support": ">=1.0.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-10-26 21:19:01",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "Laravel's configuration management library."
-    },
-    {
-        "name": "symfony/console",
-        "version": "2.1.x-dev",
-        "version_normalized": "2.1.9999999.9999999-dev",
-        "target-dir": "Symfony/Component/Console",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Console",
-            "reference": "fda96868928f4731986152a2e51052ea32b88e25"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/symfony/Console/zipball/fda96868928f4731986152a2e51052ea32b88e25",
-            "reference": "fda96868928f4731986152a2e51052ea32b88e25",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "time": "2012-11-04 08:29:19",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.1-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\Console": ""
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "illuminate/console",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/console",
-            "reference": "c31939e34d25409a7a613ce749185d564aaf3dd6"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/console/zipball/c31939e34d25409a7a613ce749185d564aaf3dd6",
-            "reference": "c31939e34d25409a7a613ce749185d564aaf3dd6",
-            "shasum": ""
-        },
-        "require": {
-            "symfony/console": "2.1.*"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-11-04 01:55:54",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Console": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "keywords": [
-            "laravel"
-        ]
-    },
-    {
-        "name": "symfony/event-dispatcher",
-        "version": "2.1.x-dev",
-        "version_normalized": "2.1.9999999.9999999-dev",
-        "target-dir": "Symfony/Component/EventDispatcher",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher",
-            "reference": "v2.1.3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/symfony/EventDispatcher/zipball/v2.1.3",
-            "reference": "v2.1.3",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "symfony/dependency-injection": "2.1.*"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "2.1.*",
-            "symfony/http-kernel": "2.1.*"
-        },
-        "time": "2012-10-04 08:17:57",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.1-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\EventDispatcher": ""
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "symfony/http-kernel",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
-        "target-dir": "Symfony/Component/HttpKernel",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/HttpKernel",
-            "reference": "v2.1.0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/symfony/HttpKernel/zipball/v2.1.0",
-            "reference": "v2.1.0",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3",
-            "symfony/event-dispatcher": "2.1.*",
-            "symfony/http-foundation": "2.1.*"
-        },
-        "require-dev": {
-            "symfony/browser-kit": "2.1.*",
-            "symfony/class-loader": "2.1.*",
-            "symfony/config": "2.1.*",
-            "symfony/console": "2.1.*",
-            "symfony/dependency-injection": "2.1.*",
-            "symfony/finder": "2.1.*",
-            "symfony/process": "2.1.*",
-            "symfony/routing": "2.1.*"
-        },
-        "suggest": {
-            "symfony/browser-kit": "v2.1.0",
-            "symfony/class-loader": "v2.1.0",
-            "symfony/config": "v2.1.0",
-            "symfony/console": "v2.1.0",
-            "symfony/dependency-injection": "v2.1.0",
-            "symfony/finder": "v2.1.0"
-        },
-        "time": "2012-09-06 02:01:56",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\HttpKernel": ""
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony HttpKernel Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "illuminate/exception",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/exception",
-            "reference": "9a0631bf043390942a75564b44969b8ea78ab8f9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/exception/archive/9a0631bf043390942a75564b44969b8ea78ab8f9.zip",
-            "reference": "9a0631bf043390942a75564b44969b8ea78ab8f9",
-            "shasum": ""
-        },
-        "require": {
-            "symfony/http-kernel": "2.1.*"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-09-26 16:49:01",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Exception": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "keywords": [
-            "laravel"
-        ]
-    },
-    {
         "name": "monolog/monolog",
         "version": "1.2.1",
         "version_normalized": "1.2.1.0",
@@ -863,35 +57,213 @@
         ]
     },
     {
-        "name": "illuminate/log",
+        "name": "illuminate/support",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "http://github.com/illuminate/log",
-            "reference": "e7666ed217c86e97edd56fc593e8102e0cd48b67"
+            "url": "http://github.com/illuminate/support",
+            "reference": "c92040c4ece5e049813eba46b66420a6b7d8df2a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/illuminate/log/archive/e7666ed217c86e97edd56fc593e8102e0cd48b67.zip",
-            "reference": "e7666ed217c86e97edd56fc593e8102e0cd48b67",
+            "url": "https://github.com/illuminate/support/archive/c92040c4ece5e049813eba46b66420a6b7d8df2a.zip",
+            "reference": "c92040c4ece5e049813eba46b66420a6b7d8df2a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-12-31 02:15:55",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Support": "src/"
+            },
+            "files": [
+                "src/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "Various utilities and support functions."
+    },
+    {
+        "name": "illuminate/filesystem",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/filesystem",
+            "reference": "fcb06d938e381974d652a00da10d317ace1dac37"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/filesystem/archive/fcb06d938e381974d652a00da10d317ace1dac37.zip",
+            "reference": "fcb06d938e381974d652a00da10d317ace1dac37",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0",
-            "monolog/monolog": "1.2.1"
+            "illuminate/support": "1.2.*"
+        },
+        "time": "2012-12-07 22:26:17",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A filesystem abstraction library."
+    },
+    {
+        "name": "illuminate/container",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/container",
+            "reference": "0bcf0e284236d08094b4b6795412ba73471e418b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/container/archive/0bcf0e284236d08094b4b6795412ba73471e418b.zip",
+            "reference": "0bcf0e284236d08094b4b6795412ba73471e418b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-12-22 03:47:20",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A powerful IoC container for PHP."
+    },
+    {
+        "name": "illuminate/events",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/events",
+            "reference": "4f0a51cf84885557aa7598eef892ffe9e4d48b9c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/events/archive/4f0a51cf84885557aa7598eef892ffe9e4d48b9c.zip",
+            "reference": "4f0a51cf84885557aa7598eef892ffe9e4d48b9c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/container": "1.2.*",
+            "illuminate/support": "1.2.*"
         },
         "require-dev": {
             "mockery/mockery": "0.7.2"
         },
-        "time": "2012-09-28 18:38:49",
+        "time": "2012-12-07 22:25:48",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Illuminate\\Log": "src/"
+                "Illuminate\\Events": "src/"
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A simple, powerful events system."
+    },
+    {
+        "name": "illuminate/view",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/view",
+            "reference": "10f97a53c0f30a9ca4f5a5294362fab42c3ee6a6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/view/archive/10f97a53c0f30a9ca4f5a5294362fab42c3ee6a6.zip",
+            "reference": "10f97a53c0f30a9ca4f5a5294362fab42c3ee6a6",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/container": "1.2.*",
+            "illuminate/events": "1.2.*",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-07 22:29:34",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\View": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
         "authors": [
             {
                 "name": "Taylor Otwell",
@@ -900,24 +272,848 @@
         ]
     },
     {
-        "name": "swiftmailer/swiftmailer",
-        "version": "v4.2.1",
-        "version_normalized": "4.2.1.0",
+        "name": "symfony/translation",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Translation",
         "source": {
             "type": "git",
-            "url": "git://github.com/swiftmailer/swiftmailer.git",
-            "reference": "v4.2.1"
+            "url": "https://github.com/symfony/Translation",
+            "reference": "11ef179d313afca983b3be2063f082b6a40a2a8c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/swiftmailer/swiftmailer/zipball/v4.2.1",
-            "reference": "v4.2.1",
+            "url": "https://github.com/symfony/Translation/archive/11ef179d313afca983b3be2063f082b6a40a2a8c.zip",
+            "reference": "11ef179d313afca983b3be2063f082b6a40a2a8c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "symfony/config": "2.2.*",
+            "symfony/yaml": "2.2.*"
+        },
+        "suggest": {
+            "symfony/config": "2.2.*",
+            "symfony/yaml": "2.2.*"
+        },
+        "time": "2012-12-19 07:09:49",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Translation\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Translation Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/http-foundation",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/HttpFoundation",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/HttpFoundation",
+            "reference": "65cdb4417e8d74e1a58701fce8c80a276489fcc5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/HttpFoundation/archive/65cdb4417e8d74e1a58701fce8c80a276489fcc5.zip",
+            "reference": "65cdb4417e8d74e1a58701fce8c80a276489fcc5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2012-12-29 13:43:44",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\HttpFoundation\\": ""
+            },
+            "classmap": [
+                "Symfony/Component/HttpFoundation/Resources/stubs"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony HttpFoundation Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "illuminate/validation",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/validation",
+            "reference": "b692c2daadcd352c84c659ddee3f42e4494cd409"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/validation/archive/b692c2daadcd352c84c659ddee3f42e4494cd409.zip",
+            "reference": "b692c2daadcd352c84c659ddee3f42e4494cd409",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/support": "1.2.*",
+            "symfony/http-foundation": "2.2.*",
+            "symfony/translation": "2.2.*"
+        },
+        "require-dev": {
+            "illuminate/database": "1.2.*",
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-22 04:03:24",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "An amazingly simple validation library for PHP."
+    },
+    {
+        "name": "illuminate/translation",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/translation",
+            "reference": "2483425c71ffec99b07b1a8c37cc9b4c59a28533"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/translation/archive/2483425c71ffec99b07b1a8c37cc9b4c59a28533.zip",
+            "reference": "2483425c71ffec99b07b1a8c37cc9b4c59a28533",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "symfony/translation": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-22 04:02:54",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Translation": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ]
+    },
+    {
+        "name": "illuminate/encryption",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/encryption",
+            "reference": "6b5349d67154a021ee79b2c51aeef19e5a6b9598"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/encryption/archive/6b5349d67154a021ee79b2c51aeef19e5a6b9598.zip",
+            "reference": "6b5349d67154a021ee79b2c51aeef19e5a6b9598",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/support": "1.2.*"
+        },
+        "time": "2012-12-07 22:25:26",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A simple wrapper around the mcrypt library."
+    },
+    {
+        "name": "illuminate/database",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/database",
+            "reference": "2280e8dd734595472fcbe331e2b91df483db5a1f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/database/archive/2280e8dd734595472fcbe331e2b91df483db5a1f.zip",
+            "reference": "2280e8dd734595472fcbe331e2b91df483db5a1f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/events": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2",
+            "illuminate/console": "1.2.*",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/pagination": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "suggest": {
+            "illuminate/events": "Allows for catching of database query events."
+        },
+        "time": "2013-01-01 03:01:01",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Database": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "An elegant database abstraction library.",
+        "keywords": [
+            "laravel"
+        ]
+    },
+    {
+        "name": "illuminate/cookie",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/cookie",
+            "reference": "ad62833ec2e236544ff95c236d00ff2246457aa2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/cookie/archive/ad62833ec2e236544ff95c236d00ff2246457aa2.zip",
+            "reference": "ad62833ec2e236544ff95c236d00ff2246457aa2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/encryption": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "symfony/http-foundation": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-22 04:00:01",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A cookie creation utility."
+    },
+    {
+        "name": "illuminate/redis",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/redis",
+            "reference": "ea2416a3b65e9814595b08f88aa9f5c1409a412e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/redis/archive/ea2416a3b65e9814595b08f88aa9f5c1409a412e.zip",
+            "reference": "ea2416a3b65e9814595b08f88aa9f5c1409a412e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/support": "1.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-07 22:28:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Redis": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "keywords": [
+            "laravel"
+        ]
+    },
+    {
+        "name": "illuminate/cache",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/cache",
+            "reference": "2b83183ba886527caf1ac765b94689269eaeac4e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/cache/archive/2b83183ba886527caf1ac765b94689269eaeac4e.zip",
+            "reference": "2b83183ba886527caf1ac765b94689269eaeac4e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/database": "1.2.*",
+            "illuminate/encryption": "1.2.*",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/redis": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-07 22:23:45",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Cache": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A beautiful caching library."
+    },
+    {
+        "name": "illuminate/session",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/session",
+            "reference": "3ca6369c38fcd5102a57be2b5c14acb993f5d6bc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/session/archive/3ca6369c38fcd5102a57be2b5c14acb993f5d6bc.zip",
+            "reference": "3ca6369c38fcd5102a57be2b5c14acb993f5d6bc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/cache": "1.2.*",
+            "illuminate/cookie": "1.2.*",
+            "illuminate/database": "1.2.*",
+            "illuminate/encryption": "1.2.*",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "symfony/http-foundation": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": ">=0.7.2"
+        },
+        "time": "2012-12-22 04:02:11",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Session": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A tidy, simple session library."
+    },
+    {
+        "name": "symfony/routing",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Routing",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Routing",
+            "reference": "87a66890450658ccac99702ac5e4f002ece9e23e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Routing/archive/87a66890450658ccac99702ac5e4f002ece9e23e.zip",
+            "reference": "87a66890450658ccac99702ac5e4f002ece9e23e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "doctrine/common": ">=2.2,<2.4-dev",
+            "symfony/config": "2.2.*",
+            "symfony/yaml": "2.2.*",
+            "symfony/http-kernel": "2.2.*"
+        },
+        "suggest": {
+            "doctrine/common": ">=2.2,<2.4-dev",
+            "symfony/config": "2.2.*",
+            "symfony/yaml": "2.2.*"
+        },
+        "time": "2012-12-28 13:21:48",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Routing\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Routing Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/EventDispatcher",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/EventDispatcher",
+            "reference": "ff78cb85890637367848856e06e564e890890ec7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/EventDispatcher/archive/ff78cb85890637367848856e06e564e890890ec7.zip",
+            "reference": "ff78cb85890637367848856e06e564e890890ec7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "symfony/dependency-injection": "2.2.*"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "2.2.*",
+            "symfony/http-kernel": "2.2.*"
+        },
+        "time": "2012-12-19 07:09:49",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/http-kernel",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/HttpKernel",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/HttpKernel",
+            "reference": "635cca3a1341e2f66dff47a3fd8f6b308afb7077"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/HttpKernel/archive/635cca3a1341e2f66dff47a3fd8f6b308afb7077.zip",
+            "reference": "635cca3a1341e2f66dff47a3fd8f6b308afb7077",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "symfony/event-dispatcher": "2.2.*",
+            "symfony/http-foundation": "2.2.*"
+        },
+        "require-dev": {
+            "symfony/browser-kit": "2.2.*",
+            "symfony/class-loader": "2.2.*",
+            "symfony/config": "2.2.*",
+            "symfony/console": "2.2.*",
+            "symfony/dependency-injection": "2.2.*",
+            "symfony/finder": "2.2.*",
+            "symfony/process": "2.2.*",
+            "symfony/routing": "2.2.*",
+            "symfony/stopwatch": "2.2.*"
+        },
+        "suggest": {
+            "symfony/browser-kit": "2.2.*",
+            "symfony/class-loader": "2.2.*",
+            "symfony/config": "2.2.*",
+            "symfony/console": "2.2.*",
+            "symfony/dependency-injection": "2.2.*",
+            "symfony/finder": "2.2.*"
+        },
+        "time": "2012-12-28 23:07:33",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\HttpKernel\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony HttpKernel Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "illuminate/http",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/http",
+            "reference": "0bbf390ed12e1f362e787c112fafec6f9cbe997a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/http/archive/0bbf390ed12e1f362e787c112fafec6f9cbe997a.zip",
+            "reference": "0bbf390ed12e1f362e787c112fafec6f9cbe997a",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/session": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "symfony/http-foundation": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2013-01-01 19:30:17",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Http": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "keywords": [
+            "laravel"
+        ]
+    },
+    {
+        "name": "illuminate/routing",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/routing",
+            "reference": "dfd67055125a7b34db5d10f9c61d52d76c666677"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/routing/archive/dfd67055125a7b34db5d10f9c61d52d76c666677.zip",
+            "reference": "dfd67055125a7b34db5d10f9c61d52d76c666677",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/container": "1.2.*",
+            "illuminate/http": "1.2.*",
+            "illuminate/session": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "symfony/http-foundation": "2.2.*",
+            "symfony/http-kernel": "2.2.*",
+            "symfony/routing": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2",
+            "illuminate/console": "1.2.*",
+            "illuminate/filesystem": "1.2.*"
+        },
+        "time": "2012-12-31 02:25:29",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Routing": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A swift routing and dispatch component.",
+        "keywords": [
+            "laravel"
+        ]
+    },
+    {
+        "name": "illuminate/pagination",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/pagination",
+            "reference": "c9f3b6d41bcd11dac25253bc0846a29f43bfa97a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/pagination/archive/c9f3b6d41bcd11dac25253bc0846a29f43bfa97a.zip",
+            "reference": "c9f3b6d41bcd11dac25253bc0846a29f43bfa97a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/http": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "illuminate/view": "1.2.*",
+            "symfony/http-foundation": "2.2.*",
+            "symfony/translation": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-31 02:18:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Pagination": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "keywords": [
+            "laravel"
+        ]
+    },
+    {
+        "name": "swiftmailer/swiftmailer",
+        "version": "v4.2.2",
+        "version_normalized": "4.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/swiftmailer/swiftmailer.git",
+            "reference": "v4.2.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/swiftmailer/swiftmailer/zipball/v4.2.2",
+            "reference": "v4.2.2",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
-        "time": "2012-07-13 09:46:37",
+        "time": "2012-10-25 01:30:40",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -930,6 +1126,7 @@
                 "lib/swift_required.php"
             ]
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "LGPL"
         ],
@@ -950,38 +1147,42 @@
         ]
     },
     {
-        "name": "illuminate/view",
+        "name": "illuminate/log",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "http://github.com/illuminate/view",
-            "reference": "8c0f8b6ad256f0d4337beaa436d183d776c5c1c5"
+            "url": "http://github.com/illuminate/log",
+            "reference": "dc6dacf2479da805ba683549077ea27180e609e5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/illuminate/view/archive/8c0f8b6ad256f0d4337beaa436d183d776c5c1c5.zip",
-            "reference": "8c0f8b6ad256f0d4337beaa436d183d776c5c1c5",
+            "url": "https://github.com/illuminate/log/archive/dc6dacf2479da805ba683549077ea27180e609e5.zip",
+            "reference": "dc6dacf2479da805ba683549077ea27180e609e5",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "illuminate/support": ">=1.0.0",
-            "illuminate/events": ">=1.0.0",
-            "illuminate/container": ">=1.0.0"
+            "illuminate/support": "1.2.*",
+            "monolog/monolog": "1.2.*"
         },
         "require-dev": {
             "mockery/mockery": "0.7.2"
         },
-        "time": "2012-11-05 17:51:34",
+        "time": "2012-12-07 22:27:30",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Illuminate\\View": "src/"
+                "Illuminate\\Log": "src/"
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "authors": [
             {
                 "name": "Taylor Otwell",
@@ -996,33 +1197,39 @@
         "source": {
             "type": "git",
             "url": "http://github.com/illuminate/mail",
-            "reference": "4b5ff4c81fb1ce1a655a3e5d9b2e31a77697d577"
+            "reference": "d4b102f62e80f803244dc37e142b31b0f7c6c49a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/illuminate/mail/zipball/4b5ff4c81fb1ce1a655a3e5d9b2e31a77697d577",
-            "reference": "4b5ff4c81fb1ce1a655a3e5d9b2e31a77697d577",
+            "url": "https://github.com/illuminate/mail/archive/d4b102f62e80f803244dc37e142b31b0f7c6c49a.zip",
+            "reference": "d4b102f62e80f803244dc37e142b31b0f7c6c49a",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0",
-            "illuminate/view": ">=1.0.0",
-            "swiftmailer/swiftmailer": "4.2.1",
-            "illuminate/container": ">=1.0.0",
-            "illuminate/support": ">=1.0.0",
-            "illuminate/log": ">=1.0.0"
+            "illuminate/container": "1.2.*",
+            "illuminate/log": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "illuminate/view": "1.2.*",
+            "swiftmailer/swiftmailer": "4.2.*"
         },
         "require-dev": {
             "mockery/mockery": "0.7.2"
         },
-        "time": "2012-10-30 18:39:18",
+        "time": "2012-12-07 22:27:40",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "Illuminate\\Mail": "src/"
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "authors": [
             {
                 "name": "Taylor Otwell",
@@ -1031,45 +1238,85 @@
         ]
     },
     {
-        "name": "symfony/translation",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
-        "target-dir": "Symfony/Component/Translation",
+        "name": "illuminate/exception",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Translation",
-            "reference": "v2.1.0-RC2"
+            "url": "http://github.com/illuminate/exception",
+            "reference": "76175926f7e0c4e3644d3cc8d0429a6aaf8a4979"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/Translation/zipball/v2.1.0-RC2",
-            "reference": "v2.1.0-RC2",
+            "url": "https://github.com/illuminate/exception/archive/76175926f7e0c4e3644d3cc8d0429a6aaf8a4979.zip",
+            "reference": "76175926f7e0c4e3644d3cc8d0429a6aaf8a4979",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/support": "1.2.*",
+            "symfony/http-kernel": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-22 04:48:56",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Exception": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "keywords": [
+            "laravel"
+        ]
+    },
+    {
+        "name": "symfony/console",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Console",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Console",
+            "reference": "388ea8dbc1b3e1f96721e2799eb2d037e411a281"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Console/archive/388ea8dbc1b3e1f96721e2799eb2d037e411a281.zip",
+            "reference": "388ea8dbc1b3e1f96721e2799eb2d037e411a281",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "require-dev": {
-            "symfony/config": "2.1.*",
-            "symfony/yaml": "2.1.*"
-        },
-        "suggest": {
-            "symfony/config": "v2.1.0",
-            "symfony/yaml": "v2.1.0"
-        },
-        "time": "2012-08-28 00:54:42",
+        "time": "2012-12-19 07:09:49",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.1-dev"
+                "dev-master": "2.2-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\Translation": ""
+                "Symfony\\Component\\Console\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -1083,40 +1330,44 @@
                 "homepage": "http://symfony.com/contributors"
             }
         ],
-        "description": "Symfony Translation Component",
+        "description": "Symfony Console Component",
         "homepage": "http://symfony.com"
     },
     {
-        "name": "illuminate/pagination",
+        "name": "illuminate/console",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "http://github.com/illuminate/pagination",
-            "reference": "6d7073a901038d1d6fd93782e4992ee27174a295"
+            "url": "http://github.com/illuminate/console",
+            "reference": "cb78517e6d7eeeeb4899840678ab40f1d968a6aa"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/illuminate/pagination/archive/6d7073a901038d1d6fd93782e4992ee27174a295.zip",
-            "reference": "6d7073a901038d1d6fd93782e4992ee27174a295",
+            "url": "https://github.com/illuminate/console/archive/cb78517e6d7eeeeb4899840678ab40f1d968a6aa.zip",
+            "reference": "cb78517e6d7eeeeb4899840678ab40f1d968a6aa",
             "shasum": ""
         },
         "require": {
-            "illuminate/view": ">=1.0.0",
-            "symfony/http-foundation": "2.1.*",
-            "symfony/translation": "2.1.*"
+            "symfony/console": "2.2.*"
         },
         "require-dev": {
             "mockery/mockery": "0.7.2"
         },
-        "time": "2012-09-26 16:03:15",
+        "time": "2012-12-30 04:52:20",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Illuminate\\Pagination": "src/"
+                "Illuminate\\Console": "src/"
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "authors": [
             {
                 "name": "Taylor Otwell",
@@ -1128,37 +1379,179 @@
         ]
     },
     {
+        "name": "illuminate/config",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/config",
+            "reference": "2844903ca406e3d97d5c3baec3d8506721ab8d8d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/config/archive/2844903ca406e3d97d5c3baec3d8506721ab8d8d.zip",
+            "reference": "2844903ca406e3d97d5c3baec3d8506721ab8d8d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2012-12-07 22:24:10",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "Laravel's configuration management library."
+    },
+    {
+        "name": "illuminate/hashing",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/hashing",
+            "reference": "850027e4b2b6eeaa8da40996d1287b111eb52bd6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/hashing/archive/850027e4b2b6eeaa8da40996d1287b111eb52bd6.zip",
+            "reference": "850027e4b2b6eeaa8da40996d1287b111eb52bd6",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/support": "1.2.*"
+        },
+        "time": "2012-12-07 22:26:50",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A password hashing library.",
+        "keywords": [
+            "password",
+            "hashing",
+            "bcrypt"
+        ]
+    },
+    {
+        "name": "illuminate/auth",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/auth",
+            "reference": "b3ceb9f4a5c70e01b5085e91a885bc58923a9aee"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/auth/archive/b3ceb9f4a5c70e01b5085e91a885bc58923a9aee.zip",
+            "reference": "b3ceb9f4a5c70e01b5085e91a885bc58923a9aee",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/cookie": "1.2.*",
+            "illuminate/encryption": "1.2.*",
+            "illuminate/hashing": "1.2.*",
+            "illuminate/session": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "symfony/http-foundation": "2.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": ">=0.7.2",
+            "illuminate/database": "1.2.*"
+        },
+        "time": "2012-12-31 04:15:05",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Auth": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "A flexible, driver based authentication library."
+    },
+    {
         "name": "symfony/process",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "target-dir": "Symfony/Component/Process",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/Process",
-            "reference": "v2.1.1"
+            "reference": "7f55bdf84a2b439492aadaea71e8d9824ea783d5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/Process/zipball/v2.1.1",
-            "reference": "v2.1.1",
+            "url": "https://github.com/symfony/Process/archive/7f55bdf84a2b439492aadaea71e8d9824ea783d5.zip",
+            "reference": "7f55bdf84a2b439492aadaea71e8d9824ea783d5",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2012-08-30 05:49:05",
+        "time": "2012-12-20 07:22:35",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.1-dev"
+                "dev-master": "2.2-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\Process": ""
+                "Symfony\\Component\\Process\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -1176,84 +1569,44 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "illuminate/http",
+        "name": "symfony/dom-crawler",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/http",
-            "reference": "336b1d1b9a1a74a5ca81e2a70c4cfc53557f6a1b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/http/archive/336b1d1b9a1a74a5ca81e2a70c4cfc53557f6a1b.zip",
-            "reference": "336b1d1b9a1a74a5ca81e2a70c4cfc53557f6a1b",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/session": ">=1.0.0",
-            "symfony/http-foundation": "2.1.*",
-            "illuminate/support": ">=1.0.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-11-05 03:57:13",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Http": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "keywords": [
-            "laravel"
-        ]
-    },
-    {
-        "name": "symfony/dom-crawler",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
         "target-dir": "Symfony/Component/DomCrawler",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/DomCrawler",
-            "reference": "v2.1.0"
+            "reference": "60d8c908a24ccab2beddc64d7624730fc84957bd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/DomCrawler/zipball/v2.1.0",
-            "reference": "v2.1.0",
+            "url": "https://github.com/symfony/DomCrawler/archive/60d8c908a24ccab2beddc64d7624730fc84957bd.zip",
+            "reference": "60d8c908a24ccab2beddc64d7624730fc84957bd",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
         "require-dev": {
-            "symfony/css-selector": "2.1.*"
+            "symfony/css-selector": "2.2.*"
         },
         "suggest": {
-            "symfony/css-selector": "v2.1.0"
+            "symfony/css-selector": "2.2.*"
         },
-        "time": "2012-08-28 00:54:42",
+        "time": "2012-12-19 07:09:49",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.1-dev"
+                "dev-master": "2.2-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\DomCrawler": ""
+                "Symfony\\Component\\DomCrawler\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -1272,36 +1625,37 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "target-dir": "Symfony/Component/CssSelector",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/CssSelector",
-            "reference": "v2.1.0-RC2"
+            "reference": "01f17748c1248c552e9097cad5b9d0aae65010e3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/CssSelector/zipball/v2.1.0-RC2",
-            "reference": "v2.1.0-RC2",
+            "url": "https://github.com/symfony/CssSelector/archive/01f17748c1248c552e9097cad5b9d0aae65010e3.zip",
+            "reference": "01f17748c1248c552e9097cad5b9d0aae65010e3",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2012-08-22 06:48:41",
+        "time": "2012-12-19 07:09:49",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.1-dev"
+                "dev-master": "2.2-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\CssSelector": ""
+                "Symfony\\Component\\CssSelector\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -1320,44 +1674,45 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v2.1.0",
-        "version_normalized": "2.1.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "target-dir": "Symfony/Component/BrowserKit",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/BrowserKit",
-            "reference": "v2.1.0"
+            "reference": "33499efcc99fbea63abbdb6bf131add86773ec87"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/BrowserKit/zipball/v2.1.0",
-            "reference": "v2.1.0",
+            "url": "https://github.com/symfony/BrowserKit/archive/33499efcc99fbea63abbdb6bf131add86773ec87.zip",
+            "reference": "33499efcc99fbea63abbdb6bf131add86773ec87",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3",
-            "symfony/dom-crawler": "2.1.*"
+            "symfony/dom-crawler": "2.2.*"
         },
         "require-dev": {
-            "symfony/process": "2.1.*",
-            "symfony/css-selector": "2.1.*"
+            "symfony/process": "2.2.*",
+            "symfony/css-selector": "2.2.*"
         },
         "suggest": {
-            "symfony/process": "v2.1.0"
+            "symfony/process": "2.2.*"
         },
-        "time": "2012-08-22 06:48:41",
+        "time": "2012-12-19 07:09:49",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.1-dev"
+                "dev-master": "2.2-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\BrowserKit": ""
+                "Symfony\\Component\\BrowserKit\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -1375,356 +1730,68 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "illuminate/translation",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/translation",
-            "reference": "0223faf8209fa0a11ddeddf49ac6af29913817b5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/translation/archive/0223faf8209fa0a11ddeddf49ac6af29913817b5.zip",
-            "reference": "0223faf8209fa0a11ddeddf49ac6af29913817b5",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "illuminate/support": ">=1.0.0",
-            "symfony/translation": "2.1.*"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2012-10-01 08:38:52",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Translation": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ]
-    },
-    {
-        "name": "illuminate/profiler",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/illuminate/profiler.git",
-            "reference": "6435f5df51166b208a1d6329dd27f0078cd48cfb"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/profiler/archive/6435f5df51166b208a1d6329dd27f0078cd48cfb.zip",
-            "reference": "6435f5df51166b208a1d6329dd27f0078cd48cfb",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/foundation": ">=1.0.0"
-        },
-        "time": "2012-09-18 13:44:51",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Profiler": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Dayle Rees",
-                "email": "me@daylerees.com"
-            }
-        ],
-        "description": "An elegant front-end profiler for the Illuminate framework."
-    },
-    {
-        "name": "doctrine/common",
-        "version": "2.3.x-dev",
-        "version_normalized": "2.3.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/doctrine/common",
-            "reference": "bb0aebbf234db52df476a2b473d434745b34221c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/doctrine/common/zipball/bb0aebbf234db52df476a2b473d434745b34221c",
-            "reference": "bb0aebbf234db52df476a2b473d434745b34221c",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.2"
-        },
-        "time": "2012-09-19 22:55:18",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.3.x-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Doctrine\\Common": "lib/"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jonathan Wage",
-                "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
-            },
-            {
-                "name": "Guilherme Blanco",
-                "email": "guilhermeblanco@gmail.com",
-                "homepage": "http://www.instaclick.com"
-            },
-            {
-                "name": "Roman Borschel",
-                "email": "roman@code-factory.org"
-            },
-            {
-                "name": "Benjamin Eberlei",
-                "email": "kontakt@beberlei.de"
-            },
-            {
-                "name": "Johannes Schmitt",
-                "email": "schmittjoh@gmail.com",
-                "homepage": "http://jmsyst.com",
-                "role": "Developer of wrapped JMSSerializerBundle"
-            }
-        ],
-        "description": "Common Library for Doctrine projects",
-        "homepage": "http://www.doctrine-project.org",
-        "keywords": [
-            "collections",
-            "spl",
-            "eventmanager",
-            "annotations",
-            "persistence"
-        ]
-    },
-    {
-        "name": "symfony/routing",
-        "version": "2.1.x-dev",
-        "version_normalized": "2.1.9999999.9999999-dev",
-        "target-dir": "Symfony/Component/Routing",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Routing",
-            "reference": "v2.1.3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/symfony/Routing/zipball/v2.1.3",
-            "reference": "v2.1.3",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "symfony/config": "2.1.*",
-            "symfony/yaml": "2.1.*",
-            "symfony/http-kernel": "2.1.*",
-            "doctrine/common": ">=2.2,<2.4-dev"
-        },
-        "suggest": {
-            "doctrine/common": ">=2.2,<2.4-dev",
-            "symfony/config": "2.1.*",
-            "symfony/yaml": "2.1.*"
-        },
-        "time": "2012-10-26 02:26:42",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.1-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\Routing": ""
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Routing Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "illuminate/routing",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/routing",
-            "reference": "cf544a27cb0c57be8c69c8466181d5b19e5f040d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/routing/zipball/cf544a27cb0c57be8c69c8466181d5b19e5f040d",
-            "reference": "cf544a27cb0c57be8c69c8466181d5b19e5f040d",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/support": ">=1.0.0",
-            "symfony/http-foundation": "2.1.*",
-            "symfony/http-kernel": "2.1.*",
-            "symfony/routing": "2.1.*",
-            "illuminate/container": ">=1.0.0",
-            "illuminate/session": ">=1.0.0",
-            "illuminate/http": ">=1.0.0",
-            "doctrine/common": "2.3.*"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2",
-            "illuminate/console": ">=1.0.0",
-            "illuminate/filesystem": ">=1.0.0"
-        },
-        "time": "2012-11-02 16:51:05",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Routing": "src/"
-            }
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "A swift routing and dispatch component.",
-        "keywords": [
-            "laravel"
-        ]
-    },
-    {
-        "name": "illuminate/validation",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/validation",
-            "reference": "a5bd4b93e8cac30c2c50bb4e3866272b9cb4c7e7"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/validation/archive/a5bd4b93e8cac30c2c50bb4e3866272b9cb4c7e7.zip",
-            "reference": "a5bd4b93e8cac30c2c50bb4e3866272b9cb4c7e7",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "symfony/http-foundation": "2.*",
-            "symfony/translation": "2.*"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.*"
-        },
-        "time": "2012-10-10 18:55:04",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "An amazingly simple validation library for PHP."
-    },
-    {
         "name": "illuminate/foundation",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "http://github.com/illuminate/foundation",
-            "reference": "7bb86f3b2e3b462bc8fd041a4820b2d7c12d9882"
+            "reference": "6975c51d76ec1ed473791ef6ac5e8a86beed5a95"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/illuminate/foundation/zipball/7bb86f3b2e3b462bc8fd041a4820b2d7c12d9882",
-            "reference": "7bb86f3b2e3b462bc8fd041a4820b2d7c12d9882",
+            "url": "https://github.com/illuminate/foundation/archive/6975c51d76ec1ed473791ef6ac5e8a86beed5a95.zip",
+            "reference": "6975c51d76ec1ed473791ef6ac5e8a86beed5a95",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0",
-            "illuminate/cache": ">=1.0.0",
-            "illuminate/encryption": ">=1.0.0",
-            "illuminate/events": ">=1.0.0",
-            "illuminate/filesystem": ">=1.0.0",
-            "illuminate/session": ">=1.0.0",
-            "illuminate/cookie": ">=1.0.0",
-            "illuminate/auth": ">=1.0.0",
-            "illuminate/validation": ">=1.0.0",
-            "illuminate/database": ">=1.0.0",
-            "illuminate/support": ">=1.0.0",
-            "illuminate/container": ">=1.0.0",
-            "illuminate/routing": ">=1.0.0",
-            "illuminate/profiler": ">=1.0.0",
-            "illuminate/config": ">=1.0.0",
-            "illuminate/view": ">=1.0.0",
-            "illuminate/translation": ">=1.0.0",
-            "symfony/browser-kit": "2.1.0",
-            "symfony/css-selector": "2.1.0",
-            "symfony/dom-crawler": "2.1.0",
-            "symfony/http-kernel": "2.1.0",
-            "symfony/translation": "2.1.0",
-            "illuminate/pagination": ">=1.0.0",
-            "illuminate/redis": ">=1.0.0",
-            "illuminate/http": ">=1.0.0",
-            "illuminate/exception": ">=1.0.0",
-            "illuminate/log": ">=1.0.0",
-            "illuminate/console": ">=1.0.0",
-            "symfony/process": "2.1.0",
-            "illuminate/mail": ">=1.0.0"
+            "illuminate/auth": "1.2.*",
+            "illuminate/cache": "1.2.*",
+            "illuminate/config": "1.2.*",
+            "illuminate/console": "1.2.*",
+            "illuminate/container": "1.2.*",
+            "illuminate/cookie": "1.2.*",
+            "illuminate/database": "1.2.*",
+            "illuminate/encryption": "1.2.*",
+            "illuminate/events": "1.2.*",
+            "illuminate/exception": "1.2.*",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/http": "1.2.*",
+            "illuminate/log": "1.2.*",
+            "illuminate/mail": "1.2.*",
+            "illuminate/pagination": "1.2.*",
+            "illuminate/redis": "1.2.*",
+            "illuminate/routing": "1.2.*",
+            "illuminate/session": "1.2.*",
+            "illuminate/support": "1.2.*",
+            "illuminate/translation": "1.2.*",
+            "illuminate/validation": "1.2.*",
+            "illuminate/view": "1.2.*",
+            "symfony/browser-kit": "2.2.*",
+            "symfony/css-selector": "2.2.*",
+            "symfony/dom-crawler": "2.2.*",
+            "symfony/http-kernel": "2.2.*",
+            "symfony/process": "2.2.*",
+            "symfony/translation": "2.2.*"
         },
         "require-dev": {
-            "mockery/mockery": "0.7.*"
+            "mockery/mockery": "0.7.2"
         },
-        "time": "2012-11-01 14:53:44",
+        "time": "2012-12-31 01:30:02",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "Illuminate\\Foundation": "src/"
-            },
-            "files": [
-                "src/helpers.php"
-            ]
+            }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
