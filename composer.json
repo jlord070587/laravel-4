@@ -1,7 +1,6 @@
 {
 	"require": {
-		"illuminate/foundation": "1.2.*",
-		"raveren/kint": "dev-master"
+		"laravel/framework": "4.0.*"
 	},
 	"autoload": {
 		"classmap": [
